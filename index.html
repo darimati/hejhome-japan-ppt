@@ -775,5 +775,50 @@ ul li::before{content:"";display:block;width:5px;height:5px;border-radius:50%;ba
 </div>
 </div>
 
+<script>
+(function(){
+  // Collect all slides
+  var slides = document.querySelectorAll('.slide, .slide-dark');
+  var current = 0;
+
+  function goTo(i){
+    if(i < 0) i = 0;
+    if(i >= slides.length) i = slides.length - 1;
+    current = i;
+    slides[i].scrollIntoView({behavior:'smooth'});
+  }
+
+  // Figure out which slide is currently visible
+  function detectCurrent(){
+    var mid = window.innerHeight / 2;
+    for(var i = 0; i < slides.length; i++){
+      var r = slides[i].getBoundingClientRect();
+      if(r.top <= mid && r.bottom > mid){ current = i; break; }
+    }
+  }
+
+  window.addEventListener('keydown', function(e){
+    // Don't interfere with input fields
+    if(e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+    detectCurrent();
+
+    if(e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' '){
+      e.preventDefault();
+      goTo(current + 1);
+    } else if(e.key === 'ArrowUp' || e.key === 'ArrowLeft' || e.key === 'PageUp'){
+      e.preventDefault();
+      goTo(current - 1);
+    } else if(e.key === 'Home'){
+      e.preventDefault();
+      goTo(0);
+    } else if(e.key === 'End'){
+      e.preventDefault();
+      goTo(slides.length - 1);
+    }
+  });
+})();
+</script>
+
 </body>
 </html>

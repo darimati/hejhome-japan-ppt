@@ -206,77 +206,149 @@ ul li::before{content:"";display:block;width:5px;height:5px;border-radius:50%;ba
 <!-- ═══════════════════════════════════════════════════════ -->
 <!-- SLIDE 2 · PRODUCT LINEUP -->
 <!-- ═══════════════════════════════════════════════════════ -->
-<div class="slide" style="background:var(--bg-light)">
+<div class="slide-dark" style="min-height:100vh;display:flex;align-items:center;background:linear-gradient(160deg,#0f1b3d 0%,#162550 40%,#1a2d5a 100%)">
+<div class="slide-inner">
 <span class="sn">02 / 13</span>
-<div class="label">PRODUCT LINEUP</div>
-<h2>대상 제품 라인업</h2>
-<p class="sub">일본 Amazon 판매 준비 3개 제품 — 공식몰 링크 첨부</p>
+<div style="display:flex;align-items:center;gap:16px;margin-bottom:8px">
+  <div class="label">PRODUCT LINEUP</div>
+  <span style="font-size:10px;padding:3px 10px;border-radius:100px;background:rgba(37,99,235,0.2);color:#60a5fa;font-weight:700;letter-spacing:0.5px">3 PRODUCTS</span>
+</div>
+<h2 style="color:#fff">일본 진출 대상 제품</h2>
+<p style="font-size:15px;color:rgba(255,255,255,0.45);margin-top:8px">Amazon JP 판매 준비 완료 &mdash; 카드 클릭 시 공식몰 이동</p>
 
-<div class="g3" style="margin-top:36px">
+<div class="g3" style="margin-top:40px;gap:24px">
 
+  <!-- Product 1: Remote Hub -->
   <a href="https://hej.life/product/set-%EC%8A%A4%EB%A7%88%ED%8A%B8-%EB%A6%AC%EB%AA%A8%EC%BB%A8-%ED%97%88%EB%B8%8C-mini-2%EA%B0%9C-11/384/" target="_blank" style="text-decoration:none;color:inherit">
-    <div class="card card-amber" style="height:100%;cursor:pointer">
-      <span class="badge badge-amber">1순위</span>
-      <h3 style="color:var(--amber);margin-top:14px;font-size:18px">스마트 리모컨 허브 Mini</h3>
-      <p style="font-size:13px;color:var(--text-sub);margin-top:6px;line-height:1.6">IR 리모컨 통합 &middot; 스마트홈 허브<br>에어컨/TV/선풍기 원격제어</p>
-      <div style="margin-top:20px;padding-top:14px;border-top:1px solid var(--border-light)">
-        <div class="metric-sm" style="color:var(--amber)">&yen;4,500~6,000</div>
-        <div class="metric-label">예상 JP 판매가</div>
+    <div style="height:100%;cursor:pointer;border-radius:var(--r-lg);border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);padding:28px;transition:all .3s;position:relative;overflow:hidden" onmouseover="this.style.background='rgba(255,255,255,0.08)';this.style.borderColor='rgba(251,191,36,0.3)';this.style.transform='translateY(-4px)'" onmouseout="this.style.background='rgba(255,255,255,0.04)';this.style.borderColor='rgba(255,255,255,0.08)';this.style.transform='translateY(0)'">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#fbbf24,#f59e0b)"></div>
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(251,191,36,0.15);color:#fbbf24">SMART HUB</span>
+        <span style="font-size:40px;font-weight:900;color:rgba(251,191,36,0.08);line-height:1">01</span>
       </div>
-      <div style="margin-top:12px">
-        <span class="kw">スマートリモコン</span>
-        <span class="kw">エアコン操作</span>
-        <span class="kw">赤外線リモコン</span>
+      <h3 style="color:#fff;margin-top:16px;font-size:19px;font-weight:800;letter-spacing:-0.02em">스마트 리모컨 허브</h3>
+      <p style="font-size:13px;color:rgba(255,255,255,0.5);margin-top:8px;line-height:1.7">IR 리모컨 통합 &middot; 스마트홈 허브<br>에어컨 &middot; TV &middot; 선풍기 원격제어</p>
+
+      <div style="margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div style="padding:12px;background:rgba(251,191,36,0.06);border-radius:8px">
+          <div style="font-size:20px;font-weight:900;color:#fbbf24;letter-spacing:-0.02em">&yen;4,500~6,000</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.35);margin-top:2px;font-weight:600">예상 JP 판매가</div>
+        </div>
+        <div style="padding:12px;background:rgba(255,255,255,0.03);border-radius:8px">
+          <div style="font-size:14px;font-weight:700;color:rgba(255,255,255,0.7)">SwitchBot</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.35);margin-top:2px;font-weight:600">주요 경쟁사</div>
+        </div>
       </div>
-      <p style="font-size:11px;color:var(--amber);margin-top:14px;font-weight:700">공식몰에서 보기 &rarr;</p>
+
+      <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:4px">
+        <span style="font-size:10px;padding:3px 8px;border-radius:4px;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.5)">スマートリモコン</span>
+        <span style="font-size:10px;padding:3px 8px;border-radius:4px;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.5)">エアコン操作</span>
+        <span style="font-size:10px;padding:3px 8px;border-radius:4px;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.5)">赤外線リモコン</span>
+      </div>
+
+      <div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:space-between">
+        <span style="font-size:11px;color:rgba(255,255,255,0.3)">hej.life</span>
+        <span style="font-size:11px;color:#fbbf24;font-weight:700">공식몰 보기 &rarr;</span>
+      </div>
     </div>
   </a>
 
+  <!-- Product 2: Camera Pro 3MP -->
   <a href="https://hej.life/product/%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%99%88%EC%B9%B4%EB%A9%94%EB%9D%BC-pro-2k-qhd-300%EB%A7%8C%ED%99%94%EC%86%8C/90/" target="_blank" style="text-decoration:none;color:inherit">
-    <div class="card card-green" style="height:100%;cursor:pointer">
-      <span class="badge badge-green">볼륨</span>
-      <h3 style="color:var(--green);margin-top:14px;font-size:18px">홈카메라 Pro (3MP)</h3>
-      <p style="font-size:13px;color:var(--text-sub);margin-top:6px;line-height:1.6">2K QHD 300만화소<br>회전형 &middot; 모션추적 &middot; 야간촬영</p>
-      <div style="margin-top:20px;padding-top:14px;border-top:1px solid var(--border-light)">
-        <div class="metric-sm" style="color:var(--green)">&yen;3,500~4,500</div>
-        <div class="metric-label">예상 JP 판매가</div>
+    <div style="height:100%;cursor:pointer;border-radius:var(--r-lg);border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);padding:28px;transition:all .3s;position:relative;overflow:hidden" onmouseover="this.style.background='rgba(255,255,255,0.08)';this.style.borderColor='rgba(52,211,153,0.3)';this.style.transform='translateY(-4px)'" onmouseout="this.style.background='rgba(255,255,255,0.04)';this.style.borderColor='rgba(255,255,255,0.08)';this.style.transform='translateY(0)'">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#34d399,#059669)"></div>
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(52,211,153,0.15);color:#34d399">VOLUME</span>
+        <span style="font-size:40px;font-weight:900;color:rgba(52,211,153,0.08);line-height:1">02</span>
       </div>
-      <div style="margin-top:12px">
-        <span class="kw">見守りカメラ</span>
-        <span class="kw">ペットカメラ</span>
-        <span class="kw">コスパ</span>
+      <h3 style="color:#fff;margin-top:16px;font-size:19px;font-weight:800;letter-spacing:-0.02em">홈카메라 Pro</h3>
+      <p style="font-size:13px;color:rgba(255,255,255,0.5);margin-top:8px;line-height:1.7">2K QHD 300만화소<br>회전형 &middot; 모션추적 &middot; 야간촬영</p>
+
+      <div style="margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div style="padding:12px;background:rgba(52,211,153,0.06);border-radius:8px">
+          <div style="font-size:20px;font-weight:900;color:#34d399;letter-spacing:-0.02em">&yen;3,500~4,500</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.35);margin-top:2px;font-weight:600">예상 JP 판매가</div>
+        </div>
+        <div style="padding:12px;background:rgba(255,255,255,0.03);border-radius:8px">
+          <div style="font-size:14px;font-weight:700;color:rgba(255,255,255,0.7)">Tapo C210</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.35);margin-top:2px;font-weight:600">주요 경쟁사</div>
+        </div>
       </div>
-      <p style="font-size:11px;color:var(--green);margin-top:14px;font-weight:700">공식몰에서 보기 &rarr;</p>
+
+      <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:4px">
+        <span style="font-size:10px;padding:3px 8px;border-radius:4px;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.5)">見守りカメラ</span>
+        <span style="font-size:10px;padding:3px 8px;border-radius:4px;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.5)">ペットカメラ</span>
+        <span style="font-size:10px;padding:3px 8px;border-radius:4px;background:rgba(255,255,255,0.06);color:rgba(255,255,255,0.5)">コスパ</span>
+      </div>
+
+      <div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:space-between">
+        <span style="font-size:11px;color:rgba(255,255,255,0.3)">후기 11,966건</span>
+        <span style="font-size:11px;color:#34d399;font-weight:700">공식몰 보기 &rarr;</span>
+      </div>
     </div>
   </a>
 
+  <!-- Product 3: Camera Pro+ 5MP (HERO) -->
   <a href="https://hej.life/product/%EC%8A%A4%EB%A7%88%ED%8A%B8-%ED%99%88%EC%B9%B4%EB%A9%94%EB%9D%BC-pro-500%EB%A7%8C%ED%99%94%EC%86%8C/331/" target="_blank" style="text-decoration:none;color:inherit">
-    <div class="card card-featured" style="height:100%;cursor:pointer">
-      <span class="badge badge-accent">프리미엄 &middot; 주력</span>
-      <h3 style="color:var(--accent);margin-top:14px;font-size:18px">홈카메라 Pro+ (5MP)</h3>
-      <p style="font-size:13px;color:var(--text-sub);margin-top:6px;line-height:1.6">500만화소 &middot; 야간 컬러촬영<br>이 가격대 최고 해상도</p>
-      <div style="margin-top:20px;padding-top:14px;border-top:1px solid var(--border-light)">
-        <div class="metric-sm" style="color:var(--accent)">&yen;6,000~8,000</div>
-        <div class="metric-label">예상 JP 판매가</div>
+    <div style="height:100%;cursor:pointer;border-radius:var(--r-lg);border:1px solid rgba(96,165,250,0.25);background:linear-gradient(180deg,rgba(37,99,235,0.1),rgba(37,99,235,0.03));padding:28px;transition:all .3s;position:relative;overflow:hidden;box-shadow:0 0 40px rgba(37,99,235,0.08)" onmouseover="this.style.borderColor='rgba(96,165,250,0.5)';this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 40px rgba(37,99,235,0.15)'" onmouseout="this.style.borderColor='rgba(96,165,250,0.25)';this.style.transform='translateY(0)';this.style.boxShadow='0 0 40px rgba(37,99,235,0.08)'">
+      <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#60a5fa,#2563eb,#60a5fa)"></div>
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <span style="font-size:10px;font-weight:700;padding:3px 10px;border-radius:100px;background:rgba(96,165,250,0.2);color:#60a5fa">PREMIUM &middot; 주력</span>
+        <span style="font-size:40px;font-weight:900;color:rgba(96,165,250,0.1);line-height:1">03</span>
       </div>
-      <div style="margin-top:12px">
-        <span class="kw">500万画素</span>
-        <span class="kw">防犯カメラ</span>
-        <span class="kw">ベビーモニター</span>
+      <h3 style="color:#fff;margin-top:16px;font-size:19px;font-weight:800;letter-spacing:-0.02em">홈카메라 Pro+</h3>
+      <p style="font-size:13px;color:rgba(255,255,255,0.5);margin-top:8px;line-height:1.7">500만화소 &middot; 야간 컬러촬영<br>이 가격대 <strong style="color:#60a5fa">최고 해상도</strong></p>
+
+      <div style="margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div style="padding:12px;background:rgba(96,165,250,0.08);border-radius:8px">
+          <div style="font-size:20px;font-weight:900;color:#60a5fa;letter-spacing:-0.02em">&yen;6,000~8,000</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.35);margin-top:2px;font-weight:600">예상 JP 판매가</div>
+        </div>
+        <div style="padding:12px;background:rgba(255,255,255,0.03);border-radius:8px">
+          <div style="font-size:14px;font-weight:700;color:rgba(255,255,255,0.7)">5MP 유일</div>
+          <div style="font-size:10px;color:rgba(255,255,255,0.35);margin-top:2px;font-weight:600">이 가격대 최고</div>
+        </div>
       </div>
-      <p style="font-size:11px;color:var(--accent);margin-top:14px;font-weight:700">공식몰에서 보기 &rarr;</p>
+
+      <div style="margin-top:16px;display:flex;flex-wrap:wrap;gap:4px">
+        <span style="font-size:10px;padding:3px 8px;border-radius:4px;background:rgba(96,165,250,0.1);color:rgba(96,165,250,0.8)">500万画素</span>
+        <span style="font-size:10px;padding:3px 8px;border-radius:4px;background:rgba(96,165,250,0.1);color:rgba(96,165,250,0.8)">防犯カメラ</span>
+        <span style="font-size:10px;padding:3px 8px;border-radius:4px;background:rgba(96,165,250,0.1);color:rgba(96,165,250,0.8)">ベビーモニター</span>
+      </div>
+
+      <div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:space-between">
+        <span style="font-size:11px;color:rgba(255,255,255,0.3)">후기 675건 &middot; 4.9&#9733;</span>
+        <span style="font-size:11px;color:#60a5fa;font-weight:700">공식몰 보기 &rarr;</span>
+      </div>
     </div>
   </a>
 
 </div>
 
-<p style="font-size:12px;color:var(--text-muted);margin-top:24px;text-align:center">
-  공식몰: <a href="https://hej.life" target="_blank" style="color:var(--accent);font-weight:700;text-decoration:none">hej.life</a> &middot;
-  앱 사용자 <strong style="color:var(--navy)">150만+</strong> &middot;
-  LG전자 투자 브랜드
-</p>
+<!-- Bottom bar -->
+<div style="margin-top:36px;padding:16px 24px;background:rgba(255,255,255,0.03);border-radius:var(--r);border:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;gap:32px">
+  <div style="display:flex;align-items:center;gap:8px">
+    <span style="font-size:11px;color:rgba(255,255,255,0.35)">공식몰</span>
+    <span style="font-size:13px;color:#60a5fa;font-weight:700">hej.life</span>
+  </div>
+  <div style="width:1px;height:16px;background:rgba(255,255,255,0.1)"></div>
+  <div style="display:flex;align-items:center;gap:8px">
+    <span style="font-size:11px;color:rgba(255,255,255,0.35)">앱 사용자</span>
+    <span style="font-size:13px;color:#fff;font-weight:700">150만+</span>
+  </div>
+  <div style="width:1px;height:16px;background:rgba(255,255,255,0.1)"></div>
+  <div style="display:flex;align-items:center;gap:8px">
+    <span style="font-size:11px;color:rgba(255,255,255,0.35)">투자</span>
+    <span style="font-size:13px;color:#fff;font-weight:700">LG전자 &middot; 삼성벤처투자</span>
+  </div>
+  <div style="width:1px;height:16px;background:rgba(255,255,255,0.1)"></div>
+  <div style="display:flex;align-items:center;gap:8px">
+    <span style="font-size:11px;color:rgba(255,255,255,0.35)">한국 브랜드</span>
+    <span style="font-size:13px;color:#fbbf24;font-weight:700">Amazon JP 진입 0개</span>
+  </div>
 </div>
-<div class="divider"></div>
+</div>
+</div>
 
 <!-- ═══════════════════════════════════════════════════════ -->
 <!-- SLIDE 3 · EXECUTIVE SUMMARY -->
